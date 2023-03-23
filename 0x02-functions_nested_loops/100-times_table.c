@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * print_times_table - prints the n times table, starting with 0
  * @n: number of the times table
@@ -39,7 +40,7 @@ void print_times_table_cell(int value, bool first_column)
 if (!first_column)
 =======
 _putchar(k + '0');
-}
+} 
 else if (k < 10 && j != 0)
 >>>>>>> e09d2ce7310294eec360ccc243a19502080cd1c0
 {
@@ -51,10 +52,16 @@ if (value < 10)
 {
 _putchar(' ');
 _putchar(' ');
+<<<<<<< HEAD
 _putchar(' ');
 _putchar(value + '0');
 } 
 else if (value < 100)
+=======
+_putchar(k + '0');
+} 
+else if (k >= 10 && k < 100)
+>>>>>>> 6f1b9b6934df9239a058f81aafe0df69785fcdbf
 {
 _putchar(' ');
 _putchar(' ');
@@ -66,7 +73,7 @@ else
 =======
 _putchar((k / 10) + '0');
 _putchar((k % 10) + '0');
-}
+} 
 else if (k >= 100)
 >>>>>>> e09d2ce7310294eec360ccc243a19502080cd1c0
 {
